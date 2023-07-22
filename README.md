@@ -37,3 +37,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Dashboard](http://localhost:4200/dashboard/my-dashboard)  My Dashboard / Product List Page
 [Update Profile](http://localhost:4200/dashboard/edit-profile)  Update Profile
 [Product Detail](http://localhost:4200/dashboard/roduct-detail/1)  Product Detail By Product Id
+
+
+## DEPLOYMENT LINK - 
+[User Auth](https://64bbc417c252e05c5c1270be--stellar-haupia-44f4a2.netlify.app/)

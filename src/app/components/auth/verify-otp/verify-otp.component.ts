@@ -54,7 +54,8 @@ export class VerifyOtpComponent implements OnInit {
     }
     if(this.otpChangeResult.length == 6 && this.fillResult.length == 6)
     {
-      if(this.fillResult == environment.otp)
+      let otp : any = environment.otp;
+      if(this.fillResult == otp)
       {
         let registerUser =  JSON.parse(this.sessionService.getSession('registerdUser'));
         registerUser.is_logged_in = true;
