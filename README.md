@@ -40,4 +40,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## DEPLOYMENT LINK - 
-[User Auth](https://64bbc417c252e05c5c1270be--stellar-haupia-44f4a2.netlify.app/)
+[User Auth](https://resilient-tarsier-cc5563.netlify.app/)
