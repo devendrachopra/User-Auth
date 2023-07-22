@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToastrModule } from 'ng6-toastr-notifications';
 import { HttpClientModule } from '@angular/common/http';
+import { GuestGuard } from './guard/guest.guard';
+import { AuthGuard } from './guard/auth.guard';
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     ToastrModule.forRoot(),
     HttpClientModule
   ],
-  providers: [],
+  providers: [GuestGuard,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

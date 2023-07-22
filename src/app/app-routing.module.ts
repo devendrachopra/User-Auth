@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guard/auth.guard';
+import { GuestGuard } from './guard/guest.guard';
 const routes: Routes = [
   {
     path: '', 
     loadChildren: () =>
-    import('./components/auth/auth.module').then(m => m.AuthModule)
+    import('./components/auth/auth.module').then(m => m.AuthModule),
+    canActivate : [GuestGuard]
   },
   {
     path : 'dashboard',

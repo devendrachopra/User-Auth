@@ -16,7 +16,9 @@ export class DashboardComponent implements OnInit {
   
   logout()
   {
-    this.sessionService.deleteSession('registerdUser')
+    let user = JSON.parse(this.sessionService.getSession('registerdUser'))
+    user.is_logged_in = false;
+    this.sessionService.setSession('registerdUser',JSON.stringify(user))
     this.router.navigate(['/'])
   }
 

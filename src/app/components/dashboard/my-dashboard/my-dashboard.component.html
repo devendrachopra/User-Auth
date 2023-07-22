@@ -27,7 +27,10 @@
           </tbody>
         </table>
         <ng-template #noResults>
-            <p>No results found for "{{searchText}}".</p>
+            <div *ngIf="searchText;else noRecord">
+              <p>No results found for "{{searchText}}".</p>
+            </div>
+            <ng-template #noRecord>No results found.</ng-template>
           </ng-template>
       </form>
 </div>

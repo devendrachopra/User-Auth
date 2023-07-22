@@ -13,10 +13,10 @@
           height: 40px;
           margin-top: 28px;" (click)="resend()">Resend Otp</button>
 
-        <p *ngIf="displayTimer" style="
-        margin-top: 35px;
-        margin-left: 15px; ">{{ display }}</p>
-        </div>
+          <p *ngIf="displayTimer" style="
+          margin-top: 35px;
+          margin-left: 15px; ">{{ display }}</p>
+          </div>
         <div *ngIf="submitted && !fillResult && otpChangeResult.length == 0 && !resendOtp" class="text-danger">
           <div *ngIf="!fillResult">Otp number is required</div>
         </div>
