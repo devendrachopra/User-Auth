@@ -1,0 +1,12 @@
+<div class="container" *ngIf="productDetails">
+    <div class="wrapper" >
+      <div class="banner-image"  [ngStyle]="{'background-image': 'url(' + productDetails.image + ')'}"> </div>
+      <h1> {{productDetails.title}}</h1>
+      <p [innerHTML]="productDetails.description">Lorem ipsum dolor sit amet, <br/>
+        consectetur adipiscing elit.</p>
+      <p>Price : {{productDetails.price}}</p>
+     </div>
+     <div class="button-wrapper"> 
+       <button class="btn fill">BUY NOW</button>
+     </div>
+</div>
